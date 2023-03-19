@@ -9,6 +9,17 @@ namespace Problem_1
             int limit = 1000;
             int sum = 0;
 
+            for (int k = 0; k < limit; k++) 
+            {
+                if ((k % 3 == 0) || (k % 5 == 0)) 
+                {
+                    sum= sum+k;
+                }
+            }
+            Console.WriteLine(sum);
+
+            //Old Code
+
             //int multipleof3 = 0;
             //int multipleof5 = 0;
 
@@ -30,14 +41,6 @@ namespace Problem_1
             //    sum = sum + multipleof3 + multipleof5;
             //}
 
-            for (int k = 0; k < limit; k++) 
-            {
-                if ((k % 3 == 0) || (k % 5 == 0)) 
-                {
-                    sum= sum+k;
-                }
-            }
-            Console.WriteLine(sum);
         }
     }
 }
